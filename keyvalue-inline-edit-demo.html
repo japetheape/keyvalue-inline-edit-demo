@@ -11,19 +11,36 @@
   <h1>KeyvalueInlineEdit</h1>
   <p>Somewhere in your layout you can place a button to toggle edit mode, by adding:
   <pre>
-    \{\{>inlineEditControl\}\}
+    &#123;&#123;>inlineEditControl&#125;&#125;
   </pre>
   This looks like this:
+  <br />
+  <br />
   {{>inlineEditControl}}
   </p>
 
 
+  <i>after going into edit mode, you can click on the underlined texts to edit items, test it out below.</i>
+  <hr />
 
   <br />
-  <h1>{{>inlineEdit key='some-value' placeholder='Some value'}}</h1>
-  {{>inlineEdit key='some-other-value' placeholder='Some value' type='textarea'}}
+
+  <p>Here an editable field defined:</p>
+  <pre>
+    &#123;&#123;>inlineEdit key='value-1' placeholder='Click this text to edit'&#125;&#125;
+  </pre>
+  <strong>Example:</strong>
+  {{>inlineEdit key='value-1' placeholder='Click this text to edit'}}
 
 
-  {{>inlineEdit key='some-other-valueasdasd' placeholder='Ow yeah' type='textarea'}}
+  <p>Here an example editable field which loads a textarea is defined.</p>
+  <pre>
+    &#123;&#123;>inlineEdit key='value-2' placeholder='Ow yeah' type='textarea'&#125;&#125;
+  </pre>
+  <strong>Example:</strong>
+  {{>inlineEdit key='value-2' placeholder='Ow yeah' type='textarea'}}
+
+  <p>It can also be used for titles.</p>
+  <h2>{{>inlineEdit key='some-value' placeholder='Some value'}}</h2>
 
 </template>
