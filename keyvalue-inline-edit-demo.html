@@ -1,0 +1,29 @@
+<head>
+  <title>keyvalue-inline-edit-demo</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+
+  <h1>KeyvalueInlineEdit</h1>
+  <p>Somewhere in your layout you can place a button to toggle edit mode, by adding:
+  <pre>
+    \{\{>inlineEditControl\}\}
+  </pre>
+  This looks like this:
+  {{>inlineEditControl}}
+  </p>
+
+
+
+  <br />
+  <h1>{{>inlineEdit key='some-value' placeholder='Some value'}}</h1>
+  {{>inlineEdit key='some-other-value' placeholder='Some value' type='textarea'}}
+
+
+  {{>inlineEdit key='some-other-valueasdasd' placeholder='Ow yeah' type='textarea'}}
+
+</template>
